@@ -17,8 +17,7 @@ namespace autoUpdate
     public partial class Form1 : Form
     {
         string exepath = Environment.CurrentDirectory;
-        //readonly string connStr = "Data Source=.;Initial Catalog=ExManage;Persist Security Info=True;User ID=sa;Password=123456";
-        readonly string connStr = "Data Source=114.168.228.19;Initial Catalog=ExManage;Persist Security Info=True;User ID=sa;Password=ESP_TYO2023!";
+        readonly string connStr = "Data Source=.;Initial Catalog=数据库名;Persist Security Info=True;User ID=用户名;Password=密码";
         public Form1()
         {
             InitializeComponent();
