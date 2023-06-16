@@ -8,6 +8,15 @@
 
 为省略文件及配置，数据库连接等写死在程序中，可根据实际情况调整。
 
+表字段：
+ename(nvarchar(30))，执行程序名称，如autoUpdate.exe不要.exe
+cname(nvarchar(30))，运行程序名称，即默认登陆后运行的窗体名称
+程序使用这两个字段判断需要更新的程序是哪个，避免出现exe重名的程序导致更新错误；
+fileversion(nvarchar(30))，版本号使用上传时间年月日时判断，方便对比；
+filedata(varbinary)
+filename(nvarchar(30))，上传的压缩包名字，没用处，暂时留着方便识别；
+uptime(datetime)，上传时间
+
 客户端代码：
 #region 自动更新
             string nowVer = "0";
